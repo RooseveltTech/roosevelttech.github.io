@@ -35,6 +35,7 @@ import libertypay from "./libertypay.png";
 import paybox from "./paybox.png";
 import datafestafrica from "./datafestafrica.png";
 import liberty from "./liberty.png";
+import vendboss from "./vendboss.png";
 
 export {
   logo,
@@ -73,4 +74,5 @@ export {
   paybox,
   datafestafrica,
   liberty,
+  vendboss,
 };
