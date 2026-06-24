@@ -78,7 +78,9 @@ const Contact = () => {
     });
 
     const data = await response.json();
+    
     setResult(data.success ? "Thank you. I will get back to you as soon as possible." : "An error occurred. Please try again.");
+
     setLoading(false);
     setForm({
         name: "",
