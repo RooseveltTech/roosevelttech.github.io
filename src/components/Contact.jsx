@@ -15,7 +15,9 @@ const Contact = () => {
     message: "",
   });
 
+  
   const [loading, setLoading] = useState(false);
+  const [result, setResult] = useState("");
 
   const handleChange = (e) => {
     const { target } = e;
@@ -64,6 +66,22 @@ const Contact = () => {
       );
   };
 
+   const onSubmit = async (event) => {
+    event.preventDefault();
+    setLoading(true);
+    const formData = new FormData(event.target);
+    formData.append("access_key", "f6caa194-a722-416a-8c79-ac8645897bac");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+    setResult(data.success ? "Thank you. I will get back to you as soon as possible." : "An error occurred. Please try again.");
+  };
+
+
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
@@ -77,9 +95,11 @@ const Contact = () => {
 
         <form
           ref={formRef}
+          action="https://api.web3forms.com/submit"
           onSubmit={handleSubmit}
           className='mt-12 flex flex-col gap-8'
         >
+            <input type="hidden" name="access_key" value="f6caa194-a722-416a-8c79-ac8645897bac"></input>
           <label className='flex flex-col'>
             <span className='text-white font-medium mb-4'>Your Name</span>
             <input
@@ -120,6 +140,7 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <p className={styles.sectionSubText}>{result}</p>
         </form>
       </motion.div>
 
