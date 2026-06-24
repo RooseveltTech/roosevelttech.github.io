@@ -30,6 +30,8 @@ import {
   paybox,
   datafestafrica,
   liberty,
+  vendboss
+
 } from "../assets";
 
 export const navLinks = [
@@ -124,16 +126,50 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "Liberty Assured Limited",
+    title: "Software Engineer II",
+    company_name: "VendBoss (Liberty Assured Limited)",
+    icon: liberty,
+    iconBg: "#E6DEDD",
+    date: "May 2025 - Present",
+    points: [
+        "Served as Lead Developer for the value added service (VAS) platform using WhatsApp integration. (https://vendboss.org).",
+        "Designed and developed secure automated features for utility bill payments, user onboarding, account funding, and real-time customer support across WhatsApp and Web channels.",
+        "Acted as Core Maintainer of the services, implementing automated notifications to drive timely user actions and improve engagement.",
+        "Built AI-powered services for payment tracking, customer complaint management, and an intelligent chat interface to deliver seamless client support.",
+        "Leveraged asynchronous programming to enable concurrent multi-client interactions, ensuring high responsiveness and scalability.",
+        "Developed a commission system with automated withdrawal functionality, boosting user retention and platform loyalty."
+    ],
+  },
+  {
+    title: "Software Engineer II",
+    company_name: "Paybox360 (Liberty Assured Limited)",
+    icon: liberty,
+    iconBg: "#E6DEDD",
+    date: "April 2023 - Present",
+    points: [
+        "Led backend development for the full-cycle development of the Paybox360 HR Management Platform (https://home.paybox360.com).",
+        "Designed and implemented scalable, secure backend systems with strong emphasis on performance, reliability, and alignment with business objectives with over 10,000 users.",
+        "Developed core modules including Time & Attendance, Performance Management, and Payroll to streamline HR operations and improve efficiency.",
+        "Built a Geo-fencing service that enables employers to accurately track employee attendance during onsite activities.",
+        "Automated Pension and Tax calculators to ensure businesses remain compliant with the latest regulatory policies.",
+        "Oversaw the successful disbursement of over 2 billion Naira in payroll payments and over 250 million Naira in salary advance loans through the platform.",
+        "Wrote comprehensive unit and integration tests, achieving 98% test coverage as the project benchmark for code quality and reliability."
+    ],
+  },
+  {
+    title: "Software Engineer II",
+    company_name: "LibertyPay (Liberty Assured Limited)",
     icon: liberty,
     iconBg: "#E6DEDD",
     date: "May 2022 - Present",
     points: [
-      "Key contributor in the backend development of 'PayBox360' an innovative Human Resource Information System and Payroll solution with over 100,000 users across Nigeria and Africa. ",
-      "Collaborated as a team member to build and design the architecture, design and backend development of 'Wisewinn,' an online Lotto platform featuring various game options.",
-      "Designed and Developed 'Liberty Pay' an agency banking application that facilitates money transfers, ATM transactions, bills and utility payment functioning similar to a banking platform.",
-      "Proficiently handled maintenance and addressed software fixes for these projects, ensuring optimal performance and user satisfaction.",
+        "Developed and integrated multiple payment gateways for web and mobile platforms at LibertyPay, increasing transaction success rate by 99.9% and supporting higher daily transaction volume (https://libertypayng.com).",
+        "Led the integration of physical and virtual card payment services, expanding payment options and contributing to a 100% growth in card-related transactions.",
+        "Integrated third-party notification services (email, SMS, and text) for withdrawals and transfers, resulting in improved user satisfaction and a reduction in failed transaction follow-ups.",
+        "Debugged and fixed critical Quality Assurance tickets, enhancing operational performance and reducing system downtime by 99.9%.",
+        "Maintained Float account systems to ensure reliable and timely transaction processing.",
+        "Implemented face and address verification mechanisms, significantly reducing fraudulent activities and strengthening overall platform security.",
+        "Led the platform that has successfully processed over 5 billion naira in total transactions."
     ],
   },
   {
@@ -141,14 +177,16 @@ const experiences = [
     company_name: "DataFestAfrica",
     icon: datafestafrica,
     iconBg: "#383E56",
-    date: "March 2022 - Present",
+    date: "March 2022 - November 2024",
     points: [
-      "Created a dynamic and user-friendly frontend with HTML5/CSS£, ensuring seamless interaction and a responsive design.",
-      "Created a ticketing and merchandise payment gateway.",
-      "Demonstrated strong problem-solving skills by successfully managing all aspects of the project independently.",
+        "Led the complete redesign of the DataFestAfrica website, delivering a modern, user-friendly platform for the annual event (https://www.datacommunityafrica.org/)",
+        "Integrated seamless ticket and merchandise purchasing systems with automated notifications, streamlining yearly event registrations and sales.",
+        "Developed key interactive features including a countdown timer, hackathon registration portal, and event policy guidelines to enhance user experience.",
+        "Utilized GitHub Actions and Azure Pipelines for efficient CI/CD operations, ensuring reliable deployment and smooth project workflows."
     ],
   }
 ];
+
 
 const testimonials = [
 //   {
@@ -229,7 +267,7 @@ const projects = [
 //     source_code_link: "https://whispersms.com",
 //   },
   {
-    name: "PayBox",
+    name: "Paybox360",
     description:
       "A web application for to manage employees and payroll",
     tags: [
@@ -253,9 +291,33 @@ const projects = [
         name: "api",
         color: "blue-text-gradient",
       },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgres",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "firebase",
+        color: "pink-text-gradient",
+      },
     ],
     image: paybox,
-    source_code_link: "https://paybox360.com/",
+    source_code_link: "https://home.paybox360.com/",
   },
   {
     name: "Wise Winn",
@@ -281,6 +343,22 @@ const projects = [
       {
         name: "api",
         color: "pink-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "postgres",
+        color: "blue-text-gradient",
       },
     ],
     image: games,
@@ -312,13 +390,211 @@ const projects = [
         name: "celery",
         color: "pink-text-gradient",
       },
-    //   {
-    //     name: "threeJS",
-    //     color: "green-text-gradient",
-    //   },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },     
     ],
     image: libertypay,
     source_code_link: "https://www.libertypayng.com/",
+  },
+  {
+    name: "VendBoss",
+    description:
+      "A WhatsApp and web platform for buying Utility bills like airtime, data, power, etc.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "redis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "celery",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "soap",
+        color: "greeb-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "n8n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "scikit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "whatsapp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mqtt",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: libertypay,
+    source_code_link: "https://www.vendboss.org/",
+  },
+  {
+    name: "Liberty Pay",
+    description:
+      "A financial application that enables users to make transactions, pay bills, transfer funds, and more",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "redis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "celery",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },     
+    ],
+    image: libertypay,
+    source_code_link: "https://www.libertypayng.com/",
+  },
+  {
+    name: "VendBoss",
+    description:
+      "A WhatsApp and web platform for buying Utility bills like airtime, data, power, etc.",
+    tags: [
+      {
+        name: "python",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "django",
+        color: "green-text-gradient",
+      },
+      {
+        name: "postgresql",
+        color: "pink-text-gradient",
+      },
+
+      {
+        name: "redis",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "celery",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "docker",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "aws",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Git",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "ci/cd",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "soap",
+        color: "greeb-text-gradient",
+      },
+      {
+        name: "restapi",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "n8n",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "scikit",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "whatsapp",
+        color: "green-text-gradient",
+      },
+      {
+        name: "mqtt",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: vendboss,
+    source_code_link: "https://www.vendboss.org/",
   },
 ];
 
