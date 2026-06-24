@@ -71,6 +71,7 @@ const Contact = () => {
     setLoading(true);
     const formData = new FormData(event.target);
     formData.append("access_key", "f6caa194-a722-416a-8c79-ac8645897bac");
+    console.log(formData, "I am form Data");
 
     const response = await fetch("https://api.web3forms.com/submit", {
       method: "POST",
@@ -79,6 +80,11 @@ const Contact = () => {
 
     const data = await response.json();
     setResult(data.success ? "Thank you. I will get back to you as soon as possible." : "An error occurred. Please try again.");
+    setForm({
+        name: "",
+        email: "",
+        message: "",
+        });
   };
 
 
