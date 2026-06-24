@@ -5,7 +5,4 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
     plugins: [react()],
     base: './', // 👈 Change to dot-slash for relative path rendering
-    build: {
-        cssMinify: 'esbuild',
-    },
 })
