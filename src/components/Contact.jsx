@@ -96,7 +96,7 @@ const Contact = () => {
         <form
           ref={formRef}
           action="https://api.web3forms.com/submit"
-          onSubmit={handleSubmit}
+          onSubmit={onSubmit}
           className='mt-12 flex flex-col gap-8'
         >
             <input type="hidden" name="access_key" value="f6caa194-a722-416a-8c79-ac8645897bac"></input>
